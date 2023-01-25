@@ -115,3 +115,191 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 663ms (Views: 662.4ms | Allocations: 103136)
 
 
+Started GET "/articles/1" for 127.0.0.1 at 2023-01-25 13:26:20 +0100
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230125122606_create_articles.rb
+
+
+):
+  
+activerecord (7.0.4.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/1" for 127.0.0.1 at 2023-01-25 13:26:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230125122606_create_articles.rb
+
+
+):
+  
+activerecord (7.0.4.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-01-25 13:26:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20230125122606)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "articles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "text" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230125122606"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-01-25 12:26:41.056376"], ["updated_at", "2023-01-25 12:26:41.056376"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles/1" for 127.0.0.1 at 2023-01-25 13:26:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:63:in `set_article'
+Completed 404 Not Found in 13ms (ActiveRecord: 0.7ms | Allocations: 4687)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:63:in `set_article'
+Started GET "/articles/1" for 127.0.0.1 at 2023-01-25 13:26:46 +0100
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:63:in `set_article'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 892)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:63:in `set_article'
+Started GET "/" for 127.0.0.1 at 2023-01-25 13:26:48 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 68.2ms | Allocations: 35173)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.0ms | Allocations: 36109)
+
+
+Started GET "/articles" for 127.0.0.1 at 2023-01-25 13:26:59 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1004)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3220)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 3962)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2023-01-25 13:27:01 +0100
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 28.0ms | Allocations: 6864)
+  Rendered articles/new.html.erb within layouts/application (Duration: 29.3ms | Allocations: 7171)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 9384)
+Completed 200 OK in 53ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 23845)
+
+
